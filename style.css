@@ -110,7 +110,8 @@
     line-height: normal;
 }
 
-.activate-form .fields .input input {
+.activate-form .fields .input input,
+.add-list-form .list-content input {
     display: flex;
     padding: 14px 18px;
     align-items: center;
@@ -384,7 +385,8 @@
     background: #EFF2F7;
 }
 
-.start-btn {
+.start-btn,
+.save-btn {
     display: flex;
     padding: 6px 16px;
     justify-content: center;
@@ -574,4 +576,71 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.add-list-form {
+    display: flex;
+    width: 256px;
+    padding: 14px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 1px 4px 15px 4px rgba(0, 0, 0, 0.10);
+    z-index: 20;
+}
+
+.add-list-form .list-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.add-list-form .list-content label {
+    height: 20px;
+    align-self: stretch;
+    color: #495057;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.cancel-save-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.cancel-save-btns .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+}
+
+.cancel-btn {
+    display: flex;
+    padding: 6px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: #c5c6ce;
+    color: #504d4d;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    outline: none;
+    border: none;
 }
